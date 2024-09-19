@@ -9,7 +9,7 @@ document
     console.log(phoneNumber, pinNumber);
     if (phoneNumber === "01760445403" && pinNumber === "1234") {
       console.log("Your Are Log-in ");
-      window.location.href = "/home.html";
+      window.location.href = "./home.html";
     } else {
       alert("Wrong Phone number or pin");
     }

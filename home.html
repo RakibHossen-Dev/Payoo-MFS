@@ -16,7 +16,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="flex justify-center">
+    <main class="flex justify-center mt-5">
       <div class="mockup-phone p-1">
         <div class="camera"></div>
         <div class="display">
@@ -62,6 +62,7 @@
                     <span class="label-text">Amount</span>
                   </label>
                   <input
+                    id="input-add-money"
                     type="text"
                     placeholder="Amount"
                     class="input input-bordered"
@@ -73,6 +74,7 @@
                     <span class="label-text">Pin</span>
                   </label>
                   <input
+                    id="input-pin-number"
                     type="password"
                     placeholder="4 Digit Pin "
                     class="input input-bordered"
@@ -81,7 +83,9 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add Money</button>
+                  <button id="btn-add-money" class="btn btn-primary">
+                    Add Money
+                  </button>
                 </div>
               </form>
             </div>
