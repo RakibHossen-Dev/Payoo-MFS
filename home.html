@@ -42,19 +42,27 @@
             <!-- user action button -->
 
             <div class="flex gap-3">
-              <button id="btn-show-add-money" class="btn btn-lg">
-                <div class="flex flex-col gap-2">
-                  <i class="fa-solid fa-money-check-dollar"></i>
-                  <p>Add Money</p>
-                </div>
-              </button>
+              <div class="grid grid-cols-2 items-center justify-center gap-2">
+                <button id="btn-show-add-money" class="btn btn-lg">
+                  <div class="flex flex-col gap-2">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <p>Add Money</p>
+                  </div>
+                </button>
 
-              <button id="btn-show-cash-out" class="btn btn-lg">
-                <div class="flex flex-col gap-2">
-                  <i class="fas fa-money-bill-wave"></i>
-                  <p>Cash Out</p>
-                </div>
-              </button>
+                <button id="btn-show-cash-out" class="btn btn-lg">
+                  <div class="flex flex-col gap-2">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Cash Out</p>
+                  </div>
+                </button>
+                <button id="btn-show-trancsation-out" class="btn btn-lg">
+                  <div class="flex flex-col gap-2">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Transaction</p>
+                  </div>
+                </button>
+              </div>
             </div>
             <!-- avable blance  end-->
             <div class="divider"></div>
@@ -70,7 +78,7 @@
                   </label>
                   <input
                     id="input-add-money"
-                    type="number"
+                    type="text"
                     placeholder="Amount"
                     class="input input-bordered"
                     required
@@ -109,7 +117,7 @@
                   </label>
                   <input
                     id="input-cash-out"
-                    type="number"
+                    type="text"
                     placeholder="Amount"
                     class="input input-bordered"
                     required
@@ -136,6 +144,14 @@
               </form>
             </div>
             <!-- cash out end -->
+            <!-- Transaction  start-->
+            <div id="transaction-section" class="hidden">
+              <h3 class="text-2xl text-indigo-700 text-center">
+                Transactions History
+              </h3>
+              <div id="transaction-container" class="space-y-3"></div>
+            </div>
+            <!-- Transaction  end-->
           </div>
         </div>
       </div>
@@ -143,5 +159,6 @@
     <script src="js/home.js"></script>
     <script src="js/cashOut.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/utilits.js"></script>
   </body>
 </html>
